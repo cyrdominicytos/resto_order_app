@@ -1,0 +1,26 @@
+{
+  "marmiteApp": {
+    "ordersProductItem": {
+      "home": {
+        "title": "Orders Product Items",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Orders Product Item",
+        "createOrEditLabel": "Create or edit a Orders Product Item",
+        "notFound": "No Orders Product Items found"
+      },
+      "created": "A new Orders Product Item is created with identifier {{ param }}",
+      "updated": "A Orders Product Item is updated with identifier {{ param }}",
+      "deleted": "A Orders Product Item is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Orders Product Item {{ id }}?"
+      },
+      "detail": {
+        "title": "Orders Product Item"
+      },
+      "id": "ID",
+      "quantity": "Quantity",
+      "product": "Product",
+      "orders": "Orders"
+    }
+  }
+}

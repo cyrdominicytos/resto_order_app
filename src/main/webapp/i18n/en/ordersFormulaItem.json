@@ -1,0 +1,25 @@
+{
+  "marmiteApp": {
+    "ordersFormulaItem": {
+      "home": {
+        "title": "Orders Formula Items",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Orders Formula Item",
+        "createOrEditLabel": "Create or edit a Orders Formula Item",
+        "notFound": "No Orders Formula Items found"
+      },
+      "created": "A new Orders Formula Item is created with identifier {{ param }}",
+      "updated": "A Orders Formula Item is updated with identifier {{ param }}",
+      "deleted": "A Orders Formula Item is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Orders Formula Item {{ id }}?"
+      },
+      "detail": {
+        "title": "Orders Formula Item"
+      },
+      "id": "ID",
+      "quantity": "Quantity",
+      "orders": "Orders"
+    }
+  }
+}

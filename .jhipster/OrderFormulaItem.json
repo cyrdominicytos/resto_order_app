@@ -1,0 +1,27 @@
+{
+  "applications": "*",
+  "changelogDate": "20240201085242",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "order_formula_item",
+  "fields": [
+    {
+      "fieldName": "quantity",
+      "fieldType": "Integer"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "OrderFormulaItem",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "order",
+      "otherEntityRelationshipName": "orderFormulaItems",
+      "relationshipName": "order",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

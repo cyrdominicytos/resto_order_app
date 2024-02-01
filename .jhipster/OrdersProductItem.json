@@ -1,0 +1,33 @@
+{
+  "applications": "*",
+  "changelogDate": "20240201085611",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "orders_product_item",
+  "fields": [
+    {
+      "fieldName": "quantity",
+      "fieldType": "Integer"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "OrdersProductItem",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "product",
+      "ownerSide": true,
+      "relationshipName": "product",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "orders",
+      "otherEntityRelationshipName": "ordersProductItems",
+      "relationshipName": "orders",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

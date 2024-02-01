@@ -1,0 +1,65 @@
+{
+  "applications": "*",
+  "changelogDate": "20240201085609",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "orders",
+  "fields": [
+    {
+      "fieldName": "amount",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "createdDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "recoveryDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "updatedDate",
+      "fieldType": "Instant"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Orders",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "ordersFormulaItem",
+      "otherEntityRelationshipName": "orders",
+      "relationshipName": "ordersFormulaItems",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "ordersProductItem",
+      "otherEntityRelationshipName": "orders",
+      "relationshipName": "ordersProductItems",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "user",
+      "relationshipName": "user",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "product",
+      "otherEntityRelationshipName": "orderss",
+      "ownerSide": true,
+      "relationshipName": "products",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityName": "formula",
+      "otherEntityRelationshipName": "orderss",
+      "ownerSide": true,
+      "relationshipName": "formulas",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "serviceImpl"
+}
