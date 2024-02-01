@@ -36,30 +36,6 @@ entity Order {
 }
 
 
-entity OrderFormulaItem {
-    quantity Integer
-
-}
-entity OrderProductItem {
-    quantity Integer
-
-}
-
-
-// Une order peut avoir plusieurs OrderFormulaItem
-relationship OneToMany {
-    Order{orderFormulaItems} to OrderFormulaItem
-}
-
-// Une order peut avoir plusieurs OrderProductItem
-relationship OneToMany {
-    Order{orderProductItems} to OrderProductItem
-}
-
-// Pour chaque OrderProductItem, on connaît le Product
-relationship OneToOne {
-    OrderProductItem{product} to Product
-}
 
 //A product is of one category
 relationship ManyToOne {
