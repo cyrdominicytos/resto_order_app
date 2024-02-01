@@ -48,15 +48,6 @@ public class CacheConfiguration {
             createCache(cm, fr.cyr.marmite.app.domain.User.class.getName());
             createCache(cm, fr.cyr.marmite.app.domain.Authority.class.getName());
             createCache(cm, fr.cyr.marmite.app.domain.User.class.getName() + ".authorities");
-            createCache(cm, fr.cyr.marmite.app.domain.Product.class.getName());
-            createCache(cm, fr.cyr.marmite.app.domain.Product.class.getName() + ".orders");
-            createCache(cm, fr.cyr.marmite.app.domain.ProductCategory.class.getName());
-            createCache(cm, fr.cyr.marmite.app.domain.Formula.class.getName());
-            createCache(cm, fr.cyr.marmite.app.domain.Formula.class.getName() + ".products");
-            createCache(cm, fr.cyr.marmite.app.domain.Formula.class.getName() + ".orders");
-            createCache(cm, fr.cyr.marmite.app.domain.Order.class.getName());
-            createCache(cm, fr.cyr.marmite.app.domain.Order.class.getName() + ".products");
-            createCache(cm, fr.cyr.marmite.app.domain.Order.class.getName() + ".formulas");
             // jhipster-needle-ehcache-add-entry
         };
     }
