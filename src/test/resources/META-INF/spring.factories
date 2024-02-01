@@ -1,0 +1,3 @@
+org.springframework.test.context.ContextCustomizerFactory = fr.cyr.marmite.app.\
+    config.SqlTestContainersSpringContextCustomizerFactory,fr.cyr.marmite.app.\
+    config.KafkaTestContainersSpringContextCustomizerFactory
